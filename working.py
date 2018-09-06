@@ -3,14 +3,7 @@ import rasterio
 from shapely.geometry import Point, Polygon
 import geopandas as gpd
 import random
-#import matplotlib.pyplot as plt
-import gpd_lite_toolbox as glt
-
-import numpy as np
-import rasterio
-from shapely.geometry import Point, Polygon
-import geopandas as gpd
-import random
+import matplotlib.pyplot as plt
 
 import ee
 import gee_subset
@@ -43,3 +36,5 @@ def get_random_point_in_polygon():
 
 polygon = get_random_point_in_polygon()
 print polygon
+
+polygon.plot()
